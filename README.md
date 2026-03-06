@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ORIGIN Mini
 
-## Getting Started
+AI that thinks, debates, and executes.
+ORIGIN Mini is a multi-AI collaboration platform designed to solve the biggest problems with modern AI systems: hallucinations, weak reasoning, and unreliable outputs.
+Instead of relying on a single model, ORIGIN Mini orchestrates multiple AI systems working together to analyze problems, verify answers, and execute real workflows like coding and research.
+This would produce more accurate answers and better reasoning.
 
-First, run the development server:
+# Why ORIGIN Mini?
+**Traditional AI operational workflow**
+User Prompt → Single AI → Answer
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**ORIGIN Mini operational workflow**
+User Prompt
+↓
+Prompt Optimizer
+↓
+Multi-AI Reasoning
+↓
+Answer Verification
+↓
+Final Output
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Core Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Advanced Reasoning Mode**
+Multiple reasoning-focused AI models collaborate and critique each other's outputs before generating a final answer.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Ideal for:
+* mathematics
+* complex analysis
+* research
+* technical problem solving
+This very much reduces hallucinations and improves logic.
 
-## Learn More
+**Codo Mode**
+AI-assisted coding with real execution and verification.
+Codo Mode connects directly with GitHub Codespaces, enabling multiple AI systems to:
+generate code, analyze logic, test implementations, fix bugs, commit working code
 
-To learn more about Next.js, take a look at the following resources:
+The AI can now ensure the code actually works especially on the web.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Multi Agent Swarm**
+A coordinated swarm of AI agents gathers and synthesizes information from the web to produce structured research outputs.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Use cases:
+* market research
+* lead generation
+* competitor analysis
+* technical research
 
-## Deploy on Vercel
+**Multi-Image Generation**
+Generate and refine images using multiple image models simultaneously.
+Compare outputs, combine results, and iterate quickly across different generative systems.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Prompt Optimization Engine
+Most users write weak prompts. ORIGIN Mini improves them automatically.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+User Prompt
+↓
+Prompt Optimizer
+↓
+Enhanced Prompt
+↓
+Multi-AI System
+
+Research says this significantly improves AI output quality. With this feature, users won't requiring prompt engineering knowledge.
