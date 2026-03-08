@@ -1,12 +1,15 @@
 :root {
---bg: #080b10;
---surface: #0d1219;
---border: #1a2233;
---amber: #f5a623;
---amber-dim: #c4811a;
---cyan: #00e5ff;
---text: #e8edf5;
---muted: #6b7a94;
+--bg: #0c0720;
+--surface: #130d2e;
+--border: #2b1f50;
+--amber: #fb5607;
+--amber-dim: #c94405;
+--cyan: #3a86ff;
+--gold: #ffbe0b;
+--violet: #8338ec;
+--pink: #ff006e;
+--text: #f2edff;
+--muted: #9580c0;
 --mono: 'Space Mono', monospace;
 --serif: 'Instrument Serif', serif;
 --sans: 'DM Sans', sans-serif;
@@ -32,7 +35,7 @@ body::before {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
     pointer-events: none;
     z-index: 0;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
 nav {
@@ -43,7 +46,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 20px 48px;
-    background: rgba(8, 11, 16, 0.85);
+    background: rgba(12, 7, 32, 0.88);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
 }
@@ -63,7 +66,7 @@ nav {
     font-size: 11px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--bg);
+    color: #f2edff;
     background: var(--amber);
     border: none;
     padding: 10px 20px;
@@ -72,7 +75,7 @@ nav {
     transition: background 0.2s;
 }
 
-.nav-cta:hover { background: #ffc355; }
+.nav-cta:hover { background: #ff7433; }
 
 .hero {
     min-height: 100vh;
@@ -153,7 +156,7 @@ h1 em {
     font-size: 12px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--bg);
+    color: #f2edff;
     background: var(--amber);
     border: none;
     padding: 16px 32px;
@@ -209,7 +212,7 @@ h1 em {
     margin-bottom: 20px;
 }
 
-.workflow-col.bad h3 { color: #f56262; }
+.workflow-col.bad h3 { color: var(--pink); }
 .workflow-col.good h3 { color: var(--amber); }
 
 .workflow-steps {
@@ -233,7 +236,7 @@ h1 em {
 .ws.active {
     border-color: var(--amber);
     color: var(--text);
-    background: rgba(245, 166, 35, 0.05);
+    background: rgba(251, 86, 7, 0.07);
 }
 
 .ws-icon { font-size: 14px; }
@@ -333,7 +336,7 @@ h2 em { font-style: italic; color: var(--amber); }
 .problem-x {
     font-family: var(--mono);
     font-size: 20px;
-    color: #f56262;
+    color: var(--pink);
     margin-bottom: 12px;
 }
 
@@ -354,7 +357,7 @@ h2 em { font-style: italic; color: var(--amber); }
     margin-top: 40px;
     padding: 24px 28px;
     border-left: 2px solid var(--amber);
-    background: rgba(245, 166, 35, 0.04);
+    background: rgba(251, 86, 7, 0.05);
     font-size: 15px;
     color: var(--muted);
 }
@@ -448,8 +451,23 @@ h2 em { font-style: italic; color: var(--amber); }
 }
 
 .tag.amber {
-    border-color: rgba(245, 166, 35, 0.4);
+    border-color: rgba(251, 86, 7, 0.4);
     color: var(--amber);
+}
+
+.tag.gold {
+    border-color: rgba(255, 190, 11, 0.4);
+    color: var(--gold);
+}
+
+.tag.violet {
+    border-color: rgba(131, 56, 236, 0.4);
+    color: var(--violet);
+}
+
+.tag.blue {
+    border-color: rgba(58, 134, 255, 0.4);
+    color: var(--cyan);
 }
 
 .optimizer-section {
@@ -551,7 +569,7 @@ h2 em { font-style: italic; color: var(--amber); }
 
 .price-card.featured {
     background: var(--surface);
-    border: 1px solid rgba(245, 166, 35, 0.3);
+    border: 1px solid rgba(251, 86, 7, 0.35);
     margin: -1px;
     z-index: 1;
 }
@@ -627,9 +645,9 @@ h2 em { font-style: italic; color: var(--amber); }
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(245, 166, 35, 0.06) 0%, transparent 70%);
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(251, 86, 7, 0.08) 0%, rgba(131, 56, 236, 0.05) 50%, transparent 70%);
     pointer-events: none;
 }
 
@@ -703,6 +721,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
+    background: var(--surface);
 }
 
 .footer-logo {
@@ -741,8 +760,8 @@ footer {
     top: 0; right: -200px; bottom: 0;
     width: 55%;
     background-image:
-        linear-gradient(var(--border) 1px, transparent 1px),
-        linear-gradient(90deg, var(--border) 1px, transparent 1px);
+        linear-gradient(rgba(131, 56, 236, 0.15) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(131, 56, 236, 0.15) 1px, transparent 1px);
     background-size: 40px 40px;
     mask-image: linear-gradient(to left, rgba(0,0,0,0.3), transparent 80%);
     pointer-events: none;
