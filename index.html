@@ -279,14 +279,17 @@
   <p class="waitlist-desc">We're launching with a limited early access group. Join the waitlist for early product access, beta features, and discounted lifetime pricing.</p>
 
   <div class="waitlist-form">
-    <input type="email" class="waitlist-input" placeholder="your@email.com">
-    <button class="btn-primary" style="white-space:nowrap; flex-shrink:0;">Join Waitlist</button>
-  </div>
-
-  <div class="waitlist-perks">
-    <span class="perk">Early product access</span>
-    <span class="perk">Beta features</span>
-    <span class="perk">Discounted lifetime pricing</span>
+    <div>
+      <input type="text" id="wl-name" class="waitlist-input"
+             placeholder="Full Name"
+             style="border-bottom:none; border-right:1px solid var(--border);">
+            <input type="email" id="wl-email" class="waitlist-input"
+                   placeholder="bhardwaj.14.mit@gmail.com"
+                   style="border-right:1px solid var(--border);">
+    </div>
+    <button id="wl-btn" class="btn-primary" style="white-space:nowrap; flex-shrink:0; align-self:stretch;">
+      Join Waitlist
+    </button>
   </div>
 </section>
 

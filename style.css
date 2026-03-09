@@ -669,6 +669,8 @@ h2 em { font-style: italic; color: var(--amber); }
 
 .waitlist-form {
     display: flex;
+    flex-direction: column;
+    flex: 1;
     gap: 0;
     max-width: 460px;
     margin: 0 auto 32px;
